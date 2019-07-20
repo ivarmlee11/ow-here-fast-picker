@@ -1,10 +1,15 @@
 import React from 'react';
 import './HeroCards.css';
 
-function HeroCard() {
+function HeroCard({name, src}) {
   return (
-    <div className="selection-screen">
-        Hero Card!
+    <div className="heroes">
+        <h2>{name}</h2>
+        <img 
+          className="hero-img"
+          src={src}
+          alt={`Character portrait of the Overwatch Hero, ${name}`}
+        />
     </div>
   );
 }

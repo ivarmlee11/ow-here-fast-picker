@@ -1,9 +1,9 @@
 const express = require('express');
-const app = express();
-const PORT = process.env.PORT || 5000;
-
 const robot = require('robotjs');
 const characters = require('./characters.js');
+
+const app = express();
+const PORT = process.env.PORT || 5000;
 
 let ticker = 0;
 
